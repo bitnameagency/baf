@@ -1,0 +1,2 @@
+logID | dateTime | userKey | IP | browserID | userAgent | RequestMethod | responseCode | URL | REF | GetData | PostData
+755 | 2021-11-18 05:54:41 | f4fc0d8b98f9bbf5784cd6834e2911c73638dcef | 88.230.20.89 | root | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 | GET | 200 | /src/logDisk/1637204074.txt | https://tarimiscisi.com/adminPanel/loglist |  | 

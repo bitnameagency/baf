@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="{{ $second }};URL={{ $url }}">

@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Griffin - Responsive Bootstrap 4 Admin Dashboard Template
+Author: Hencework
+Support: support@hencework.com
+
+License: You must have a valid license purchased only from templatemonster to legally use the template for your project.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Griffin I Images</title>
+    <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Cropperjs CSS -->
+    <link href="vendors/cropperjs/dist/cropper.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Toggles CSS -->
+    <link href="vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
+    <link href="vendors/jquery-toggles/css/themes/toggles-light.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-it">
+        <div class="loader-pendulums"></div>
+    </div>
+    <!-- /Preloader -->
+    
+	<!-- HK Wrapper -->
+	<div class="hk-wrapper hk-alt-nav">
+
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar hk-navbar-alt">
+            <a class="navbar-toggle-btn nav-link-hover navbar-toggler" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarCollapseAlt" aria-controls="navbarCollapseAlt" aria-expanded="false" aria-label="Toggle navigation"><span class="feather-icon"><i data-feather="menu"></i></span></a>
+            <a class="navbar-brand" href="dashboard1.html">
+                <img class="brand-img d-inline-block align-top" src="dist/img/logo-light.png" alt="brand" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapseAlt">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown show-on-hover">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Dashboard
+							</a>
+                        <div class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <a class="dropdown-item" href="dashboard1.html">CRM</a>
+							<a class="dropdown-item" href="dashboard2.html">Project</a>
+							<a class="dropdown-item" href="dashboard3.html">Statistics</a>
+							<a class="dropdown-item" href="dashboard4.html">classic</a>
+							<a class="dropdown-item" href="dashboard5.html">Analytics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown show-on-hover">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Pages
+							</a>
+                        <div class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Application</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="chats.html">Chat</a>
+                                    <a class="dropdown-item" href="calendar.html">Calendar</a>
+                                    <a class="dropdown-item" href="email.html">Email</a>
+                                    <a class="dropdown-item" href="file-manager.html">File Manager</a>
+                                </div>
+                            </div>
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Authentication</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <div class="sub-dropdown-menu show-on-hover">
+                                        <a href="#" class="dropdown-toggle dropdown-item">Sign Up</a>
+                                        <div class="dropdown-menu open-right-side">
+                                            <a class="dropdown-item" href="signup.html">Cover</a>
+                                            <a class="dropdown-item" href="signup-simple.html">Simple</a>
+                                        </div>
+                                    </div>
+                                    <div class="sub-dropdown-menu show-on-hover">
+                                        <a href="#" class="dropdown-toggle dropdown-item">Login</a>
+                                        <div class="dropdown-menu open-right-side">
+                                            <a class="dropdown-item" href="login.html">Cover</a>
+                                            <a class="dropdown-item" href="login-simple.html">Simple</a>
+                                        </div>
+                                    </div>
+                                    <div class="sub-dropdown-menu show-on-hover">
+                                        <a href="#" class="dropdown-toggle dropdown-item">Recover Pwd</a>
+                                        <div class="dropdown-menu open-right-side">
+                                            <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+                                            <a class="dropdown-item" href="reset-password.html">Reset Password</a>
+                                        </div>
+                                    </div>
+                                    <a class="dropdown-item" href="lock-screen.html">Lock Screen</a>
+                                    <a class="dropdown-item" href="404.html">Error 404</a>
+                                    <a class="dropdown-item" href="maintenance.html">Maintenance</a>
+                                </div>
+                            </div>
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="invoice.html">Invoice</a>
+                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                            <a class="dropdown-item" href="activity.html">Activity</a>
+                            <a class="dropdown-item" href="faq.html">Faq</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown show-on-hover active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								User interface
+							</a>
+                        <div class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Components</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="alerts.html">Alerts</a>
+                                    <a class="dropdown-item" href="avatar.html">Avatar</a>
+                                    <a class="dropdown-item" href="badge.html">Badge</a>
+                                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                                    <a class="dropdown-item" href="cards.html">Cards</a>
+                                    <a class="dropdown-item" href="carousel.html">Carousel</a>
+                                    <a class="dropdown-item" href="collapse.html">Collapse</a>
+                                    <a class="dropdown-item" href="dropdowns.html">Dropdown</a>
+                                    <a class="dropdown-item" href="list-group.html">List Group</a>
+                                    <a class="dropdown-item" href="modal.html">Modal</a>
+                                    <a class="dropdown-item" href="nav.html">Nav</a>
+                                    <a class="dropdown-item" href="navbar.html">Navbar</a>
+                                    <a class="dropdown-item" href="nestable.html">Nestable</a>
+                                    <a class="dropdown-item" href="pagination.html">Pagination</a>
+                                    <a class="dropdown-item" href="popovers.html">Popovers</a>
+                                    <a class="dropdown-item" href="progress.html">Progress</a>
+                                    <a class="dropdown-item" href="tooltip.html">Tooltip</a>
+                                </div>
+                            </div>
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Content</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="typography.html">Typography</a>
+                                    <a class="dropdown-item active" href="images.html">Images</a>
+                                    <a class="dropdown-item" href="media-object.html">Media Object</a>
+                                </div>
+                            </div>
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Utilities</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="background.html">Background</a>
+                                    <a class="dropdown-item" href="border.html">Border</a>
+                                    <a class="dropdown-item" href="colors.html">Colors</a>
+                                    <a class="dropdown-item" href="embeds.html">Embeds</a>
+                                    <a class="dropdown-item" href="icons.html">Icons</a>
+                                    <a class="dropdown-item" href="shadow.html">Shadow</a>
+                                    <a class="dropdown-item" href="sizing.html">Sizing</a>
+                                    <a class="dropdown-item" href="spacing.html">Spacing</a>
+                                </div>
+                            </div>
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Forms</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="form-element.html">Form Elements</a>
+                                    <a class="dropdown-item" href="input-groups.html">Input Groups</a>
+                                    <a class="dropdown-item" href="form-layout.html">Form Layout</a>
+                                    <a class="dropdown-item" href="form-mask.html">Form Mask</a>
+                                    <a class="dropdown-item" href="form-validation.html">Form Validation</a>
+                                    <a class="dropdown-item" href="form-wizard.html">Form Wizard</a>
+                                    <a class="dropdown-item" href="file-upload.html">File Upload</a>
+                                    <a class="dropdown-item" href="editor.html">Editor</a>
+                                </div>
+                            </div>
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Tables</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="basic-table.html">Basic Table</a>
+                                    <a class="dropdown-item" href="data-table.html">Data Table</a>
+                                    <a class="dropdown-item" href="responsive-table.html">Responsive Table</a>
+                                    <a class="dropdown-item" href="editable-table.html">Editable Table</a>
+                                </div>
+                            </div>
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Charts</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="line-charts.html">Line Chart</a>
+                                    <a class="dropdown-item" href="area-charts.html">Area Chart</a>
+                                    <a class="dropdown-item" href="bar-charts.html">Bar Chart</a>
+                                    <a class="dropdown-item" href="pie-charts.html">Pie Chart</a>
+                                    <a class="dropdown-item" href="realtime-charts.html">Realtime Chart</a>
+                                    <a class="dropdown-item" href="mini-charts.html">Mini Chart</a>
+                                </div>
+                            </div>
+                            <div class="sub-dropdown-menu show-on-hover">
+                                <a href="#" class="dropdown-toggle dropdown-item">Maps</a>
+                                <div class="dropdown-menu open-right-side">
+                                    <a class="dropdown-item" href="google-map.html">Google Map</a>
+                                    <a class="dropdown-item" href="vector-map.html">Vector Map</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation.html" >Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log<span class="badge badge-success badge-sm badge-pill ml-10">v 1.0</span></a>
+                    </li>
+                </ul>
+                <form class="navbar-search-alt">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><span class="feather-icon"><i data-feather="search"></i></span></span>
+                        </div>
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+            </div>
+            <ul class="navbar-nav hk-navbar-content">
+                <li class="nav-item">
+                    <a id="settings_toggle_btn" class="nav-link nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="settings"></i></span></a>
+                </li>
+                <li class="nav-item dropdown dropdown-notifications">
+                    <a class="nav-link dropdown-toggle no-caret" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="feather-icon"><i data-feather="bell"></i></span><span class="badge-wrap"><span class="badge badge-success badge-indicator badge-indicator-sm badge-pill pulse"></span></span></a>
+                    <div class="dropdown-menu dropdown-menu-right" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <h6 class="dropdown-header">Notifications <a href="javascript:void(0);" class="">View all</a></h6>
+                        <div class="notifications-nicescroll-bar">
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <img src="dist/img/avatar1.jpg" alt="user" class="avatar-img rounded-circle">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text"><span class="text-dark text-capitalize">Evie Ono</span> accepted your invitation to join the team</div>
+                                            <div class="notifications-time">12m</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <img src="dist/img/avatar2.jpg" alt="user" class="avatar-img rounded-circle">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">New message received from <span class="text-dark text-capitalize">Misuko Heid</span></div>
+                                            <div class="notifications-time">1h</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <span class="avatar-text avatar-text-primary rounded-circle">
+													<span class="initial-wrap"><span><i class="zmdi zmdi-account font-18"></i></span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">You have a follow up with<span class="text-dark text-capitalize"> Griffin head</span> on <span class="text-dark text-capitalize">friday, dec 19</span> at <span class="text-dark">10.00 am</span></div>
+                                            <div class="notifications-time">2d</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <span class="avatar-text avatar-text-success rounded-circle">
+													<span class="initial-wrap"><span>A</span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">Application of <span class="text-dark text-capitalize">Sarah Williams</span> is waiting for your approval</div>
+                                            <div class="notifications-time">1w</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <div class="media">
+                                    <div class="media-img-wrap">
+                                        <div class="avatar avatar-sm">
+                                            <span class="avatar-text avatar-text-warning rounded-circle">
+													<span class="initial-wrap"><span><i class="zmdi zmdi-notifications font-18"></i></span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="notifications-text">Last 2 days left for the project</div>
+                                            <div class="notifications-time">15d</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-authentication">
+                    <a class="nav-link dropdown-toggle no-caret" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="media">
+                            <div class="media-img-wrap">
+                                <div class="avatar">
+                                    <img src="dist/img/avatar5.jpg" alt="user" class="avatar-img rounded-circle">
+                                </div>
+                                <span class="badge badge-success badge-indicator"></span>
+                            </div>
+                            <div class="media-body">
+                                <span>Aash Bill<i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+                        <a class="dropdown-item" href="profile.html"><i class="dropdown-icon zmdi zmdi-account"></i><span>Profile</span></a>
+                        <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-card"></i><span>My balance</span></a>
+                        <a class="dropdown-item" href="inbox.html"><i class="dropdown-icon zmdi zmdi-email"></i><span>Inbox</span></a>
+                        <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-settings"></i><span>Settings</span></a>
+                        <div class="dropdown-divider"></div>
+                        <div class="sub-dropdown-menu show-on-hover">
+                            <a href="#" class="dropdown-toggle dropdown-item no-caret"><i class="zmdi zmdi-check text-success"></i>Online</a>
+                            <div class="dropdown-menu open-left-side">
+                                <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-check text-success"></i><span>Online</span></a>
+                                <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-circle-o text-warning"></i><span>Busy</span></a>
+                                <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-minus-circle-outline text-danger"></i><span>Offline</span></a>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-power"></i><span>Log out</span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Top Navbar -->
+
+        
+
+        
+
+        <!-- Main Content -->
+        <div class="hk-pg-wrapper">
+            <!-- Breadcrumb -->
+            <nav class="hk-breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-light bg-transparent">
+                    <li class="breadcrumb-item"><a href="#">Content</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Images</li>
+                </ol>
+            </nav>
+            <!-- /Breadcrumb -->
+
+            <!-- Container -->
+            <div class="container-fluid">
+                <!-- Title -->
+                <div class="hk-pg-header">
+                    <h4 class="hk-pg-title"><span class="pg-title-icon"><span class="feather-icon"><i data-feather="image"></i></span></span>Images</h4>
+                </div>
+                <!-- /Title -->
+
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Image Shapes</h5>
+                            <p class="mb-25">Change the shape of an image using <code>.rounded</code> or <code>.circle</code> modifier classes. In addition use <code>.img-thumbnail</code> to give an image 1px border appearance.</p>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-3 mt-15">
+                                            <img src="dist/img/img-thumb.jpg" class="img-fluid" alt="img">
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 mt-15">
+                                            <img src="dist/img/img-thumb.jpg" class="img-fluid rounded" alt="img">
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 mt-15">
+                                            <img src="dist/img/img-thumb.jpg" class="img-fluid circle" alt="img">
+                                        </div>
+                                        <div class="col-sm-6 col-md-3 mt-15">
+                                            <img src="dist/img/img-thumb.jpg" class="img-fluid img-thumbnail" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Aligning images</h5>
+                            <p class="mb-40">Align images with the helper <code>float classes</code> or <code>text alignment classes</code>.</p>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="w-100 bg-light clearfix">
+                                        <img src="dist/img/img-thumb1.jpg" class="img-fluid float-left" alt="img">
+                                        <img src="dist/img/img-thumb1.jpg" class="img-fluid float-right" alt="img">
+                                    </div>
+                                    <h6 class="mt-40 mb-10">Align Center</h6>
+                                    <p class="mb-25">Block-level images can be centered using the <code>.mx-auto margin utility</code> class.</p>
+                                    <div class="w-100 bg-light">
+                                        <img src="dist/img/img-thumb1.jpg" class="img-fluid mx-auto d-block" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Cropperjs</h5>
+                            <p class="mb-40">An advanced JavaScript image cropper.</p>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <!-- Row -->
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <!-- <h3 class="page-header">Demo:</h3> -->
+                                            <div class="img-container">
+                                                <img src="dist/img/cropper.jpg" alt="Picture">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <!-- <h3 class="page-header">Preview:</h3> -->
+                                            <div class="docs-preview clearfix">
+                                                <div class="img-preview preview-lg"></div>
+                                                <div class="img-preview preview-md"></div>
+                                                <div class="img-preview preview-sm"></div>
+                                                <div class="img-preview preview-xs"></div>
+                                            </div>
+                                            <!-- <h3 class="page-header">Data:</h3> -->
+                                            <div class="docs-data">
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-prepend">
+															<label class="input-group-text" for="dataX">X</label>
+														</span>
+                                                    <input type="text" class="form-control" id="dataX" placeholder="x">
+                                                    <span class="input-group-append">
+															<span class="input-group-text">px</span>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-prepend">
+															<label class="input-group-text" for="dataY">Y</label>
+														</span>
+                                                    <input type="text" class="form-control" id="dataY" placeholder="y">
+                                                    <span class="input-group-append">
+															<span class="input-group-text">px</span>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-prepend">
+															<label class="input-group-text" for="dataWidth">Width</label>
+														</span>
+                                                    <input type="text" class="form-control" id="dataWidth" placeholder="width">
+                                                    <span class="input-group-append">
+															<span class="input-group-text">px</span>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-prepend">
+															<label class="input-group-text" for="dataHeight">Height</label>
+														</span>
+                                                    <input type="text" class="form-control" id="dataHeight" placeholder="height">
+                                                    <span class="input-group-append">
+															<span class="input-group-text">px</span>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-prepend">
+															<label class="input-group-text" for="dataRotate">Rotate</label>
+														</span>
+                                                    <input type="text" class="form-control" id="dataRotate" placeholder="rotate">
+                                                    <span class="input-group-append">
+															<span class="input-group-text">deg</span>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-prepend">
+															<label class="input-group-text" for="dataScaleX">ScaleX</label>
+														</span>
+                                                    <input type="text" class="form-control" id="dataScaleX" placeholder="scaleX">
+                                                </div>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-prepend">
+															<label class="input-group-text" for="dataScaleY">ScaleY</label>
+														</span>
+                                                    <input type="text" class="form-control" id="dataScaleY" placeholder="scaleY">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Row -->
+
+                                    <!-- Row -->
+                                    <div class="row" id="actions">
+                                        <div class="col-md-8 docs-buttons">
+                                            <!-- <h3 class="page-header">Toolbar:</h3> -->
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="setDragMode" data-option="move" title="Move">
+                                                    <span title="cropper.setDragMode(&quot;move&quot;)">
+													<span class="fa fa-arrows"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="setDragMode" data-option="crop" title="Crop">
+                                                    <span title="cropper.setDragMode(&quot;crop&quot;)">
+													<span class="fa fa-crop"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="zoom" data-option="0.1" title="Zoom In">
+                                                    <span title="cropper.zoom(0.1)">
+													<span class="fa fa-search-plus"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="zoom" data-option="-0.1" title="Zoom Out">
+                                                    <span title="cropper.zoom(-0.1)">
+													<span class="fa fa-search-minus"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="move" data-option="-10" data-second-option="0" title="Move Left">
+                                                    <span title="cropper.move(-10, 0)">
+													<span class="fa fa-arrow-left"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="move" data-option="10" data-second-option="0" title="Move Right">
+                                                    <span title="cropper.move(10, 0)">
+													<span class="fa fa-arrow-right"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="move" data-option="0" data-second-option="-10" title="Move Up">
+                                                    <span title="cropper.move(0, -10)">
+													<span class="fa fa-arrow-up"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="move" data-option="0" data-second-option="10" title="Move Down">
+                                                    <span title="cropper.move(0, 10)">
+													<span class="fa fa-arrow-down"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="rotate" data-option="-45" title="Rotate Left">
+                                                    <span title="cropper.rotate(-45)">
+													<span class="fa fa-rotate-left"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="rotate" data-option="45" title="Rotate Right">
+                                                    <span title="cropper.rotate(45)">
+													<span class="fa fa-rotate-right"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="scaleX" data-option="-1" title="Flip Horizontal">
+                                                    <span title="cropper.scaleX(-1)">
+													<span class="fa fa-arrows-h"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="scaleY" data-option="-1" title="Flip Vertical">
+                                                    <span title="cropper.scaleY(-1)">
+													<span class="fa fa-arrows-v"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="crop" title="Crop">
+                                                    <span title="cropper.crop()">
+													<span class="fa fa-check"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="clear" title="Clear">
+                                                    <span title="cropper.clear()">
+													<span class="fa fa-remove"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="disable" title="Disable">
+                                                    <span title="cropper.disable()">
+													<span class="fa fa-lock"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="enable" title="Enable">
+                                                    <span title="cropper.enable()">
+													<span class="fa fa-unlock"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="reset" title="Reset">
+                                                    <span title="cropper.reset()">
+													<span class="fa fa-refresh"></span>
+                                                    </span>
+                                                </button>
+                                                <label class="btn btn-primary btn-upload mb-0" data-toggle="tooltip" data-placement="top" for="inputImage" title="Upload image file">
+                                                    <input type="file" class="sr-only" id="inputImage" name="file" accept="image/*">
+                                                    <span title="Import image with Blob URLs">
+													<span class="fa fa-upload"></span>
+                                                    </span>
+                                                </label>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-method="destroy" title="Destroy">
+                                                    <span title="cropper.destroy()">
+													<span class="fa fa-power-off"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group btn-group-crop">
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="getCroppedCanvas" data-method="getCroppedCanvas">
+                                                    <span title="cropper.getCroppedCanvas()">
+													Get Cropped Canvas
+													</span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.getCroppedCanvas({ width: 160, height: 90 })" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: 160, &quot;height&quot;: 90 }">
+                                                    <span title="cropper.getCroppedCanvas({ width: 160, height: 90 })">
+													160&times;90
+													</span>
+                                                </button>
+                                                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.getCroppedCanvas({ width: 320, height: 180 })" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: 320, &quot;height&quot;: 180 }">
+                                                    <span title="cropper.getCroppedCanvas({ width: 320, height: 180 })">
+													320&times;180
+													</span>
+                                                </button>
+                                            </div>
+                                            <!-- Show the cropped image in modal -->
+                                            <div class="modal fade docs-cropped" id="getCroppedCanvasModal" role="dialog" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" tabindex="-1">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title" id="getCroppedCanvasTitle">Cropped</h4>
+                                                        </div>
+                                                        <div class="modal-body"></div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            <a class="btn btn-primary" data-toggle="tooltip" data-placement="top" id="download" href="javascript:void(0);" download="cropped.html">Download</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.modal -->
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.getData()" data-method="getData" data-option data-target="#putData">
+                                                <span title="cropper.getData()">
+												Get Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.setData(data)" data-method="setData" data-target="#putData">
+                                                <span title="cropper.setData(data)">
+												Set Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.getContainerData()" data-method="getContainerData" data-option data-target="#putData">
+                                                <span title="cropper.getContainerData()">
+												Get Container Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.getImageData()" data-method="getImageData" data-option data-target="#putData">
+                                                <span title="cropper.getImageData()">
+												Get Image Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.getCanvasData()" data-method="getCanvasData" data-option data-target="#putData">
+                                                <span title="cropper.getCanvasData()">
+												Get Canvas Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.setCanvasData(data)" data-method="setCanvasData" data-target="#putData">
+                                                <span title="cropper.setCanvasData(data)">
+												Set Canvas Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.getCropBoxData()" data-method="getCropBoxData" data-option data-target="#putData">
+                                                <span title="cropper.getCropBoxData()">
+												Get Crop Box Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.setCropBoxData(data)" data-method="setCropBoxData" data-target="#putData">
+                                                <span title="cropper.setCropBoxData(data)">
+												Set Crop Box Data
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.moveTo(0)" data-method="moveTo" data-option="0">
+                                                <span title="cropper.moveTo(0)">
+												0,0
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.zoomTo(1)" data-method="zoomTo" data-option="1">
+                                                <span title="cropper.zoomTo(1)">
+												100%
+												</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="cropper.rotateTo(180)" data-method="rotateTo" data-option="180">
+                                                <span title="cropper.rotateTo(180)">
+												180°
+												</span>
+                                            </button>
+                                            <input type="text" class="form-control mt-10" id="putData" placeholder="Get data to here or set data with this value">
+                                        </div>
+                                        <!-- /.docs-buttons -->
+                                        <div class="col-md-4 docs-toggles">
+                                            <!-- <h3 class="page-header">Toggles:</h3> -->
+                                            <div class="btn-group docs-aspect-ratios" data-toggle="buttons">
+                                                <label class="btn btn-primary active" data-toggle="tooltip" data-placement="top" title="aspectRatio: 16 / 9">
+                                                    <input type="radio" class="sr-only" id="aspectRatio1" name="aspectRatio" value="1.7777777777777777">
+                                                    <span title="aspectRatio: 16 / 9">
+													16:9
+													</span>
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="aspectRatio: 4 / 3">
+                                                    <input type="radio" class="sr-only" id="aspectRatio2" name="aspectRatio" value="1.3333333333333333">
+                                                    <span title="aspectRatio: 4 / 3">
+													4:3
+													</span>
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="aspectRatio: 1 / 1">
+                                                    <input type="radio" class="sr-only" id="aspectRatio3" name="aspectRatio" value="1">
+                                                    <span title="aspectRatio: 1 / 1">
+													1:1
+													</span>
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="aspectRatio: 2 / 3">
+                                                    <input type="radio" class="sr-only" id="aspectRatio4" name="aspectRatio" value="0.6666666666666666">
+                                                    <span title="aspectRatio: 2 / 3">
+													2:3
+													</span>
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="aspectRatio: NaN">
+                                                    <input type="radio" class="sr-only" id="aspectRatio5" name="aspectRatio" value="NaN">
+                                                    <span title="aspectRatio: NaN">
+													Free
+													</span>
+                                                </label>
+                                            </div>
+                                            <div class="btn-group docs-view-modes" data-toggle="buttons">
+                                                <label class="btn btn-primary active" data-toggle="tooltip" data-placement="top" title="getCroppedCanvas">
+                                                    <input type="radio" class="sr-only" id="viewMode0" name="viewMode" value="0" checked>
+                                                    <span title="View Mode 0">
+													VM0
+													</span>
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="View Mode 31">
+                                                    <input type="radio" class="sr-only" id="viewMode1" name="viewMode" value="1">
+                                                    <span title="View Mode 1">
+													VM1
+													</span>
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="View Mode 2">
+                                                    <input type="radio" class="sr-only" id="viewMode2" name="viewMode" value="2">
+                                                    <span title="View Mode 2">
+													VM2
+													</span>
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="View Mode 3">
+                                                    <input type="radio" class="sr-only" id="viewMode3" name="viewMode" value="3">
+                                                    <span title="View Mode 3">
+													VM3
+													</span>
+                                                </label>
+                                            </div>
+                                            <div class="dropdown dropup docs-options">
+                                                <button type="button" class="btn btn-primary btn-block dropdown-toggle" id="toggleOptions" data-toggle="dropdown" data-placement="top" aria-expanded="true">
+                                                    Toggle Options
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="toggleOptions">
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="responsive" checked> responsive
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="restore" checked> restore
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="checkCrossOrigin" checked> checkCrossOrigin
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="checkOrientation" checked> checkOrientation
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="modal" checked> modal
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="guides" checked> guides
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="center" checked> center
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="highlight" checked> highlight
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="background" checked> background
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="autoCrop" checked> autoCrop
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="movable" checked> movable
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="rotatable" checked> rotatable
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="scalable" checked> scalable
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="zoomable" checked> zoomable
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="zoomOnTouch" checked> zoomOnTouch
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="zoomOnWheel" checked> zoomOnWheel
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="cropBoxMovable" checked> cropBoxMovable
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="cropBoxResizable" checked> cropBoxResizable
+                                                        </label>
+                                                    </li>
+                                                    <li role="presentation">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox" name="toggleDragModeOnDblclick" checked> toggleDragModeOnDblclick
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.dropdown -->
+                                        </div>
+                                        <!-- /.docs-toggles -->
+                                    </div>
+                                    <!-- /Row -->
+                                </div>
+                            </div>
+                        </section>
+                        <section class="hk-sec-wrapper">
+                            <h5 class="hk-sec-title">Figures</h5>
+                            <p class="mb-40">Anytime you need to display a piece of content—like an image with an optional caption, consider using a figure. Aligning the figure’s caption is easy with text utilities.</p>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <figure class="figure mb-15">
+                                        <img src="dist/img/img-thumb.jpg" class="figure-img w-200p mr-40 img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                        <figcaption class="figure-caption">Left Aligned Caption</figcaption>
+                                    </figure>
+                                    <figure class="figure mb-15">
+                                        <img src="dist/img/img-thumb.jpg" class="figure-img w-200p img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                        <figcaption class="figure-caption text-right">Right Aligned Caption</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- /Row -->
+            </div>
+            <!-- /Container -->
+
+            <!-- Footer -->
+            <div class="hk-footer-wrap container-fluid">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <p>Pampered by<a href="https://hencework.com/" class="text-dark" target="_blank">Hencework</a> © 2019</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="d-inline-block">Follow us</p>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-facebook"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-twitter"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-google-plus"></i></span></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- /Footer -->
+
+        </div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /HK Wrapper -->
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JavaScript -->
+    <script src="dist/js/jquery.slimscroll.js"></script>
+
+    <!-- Fancy Dropdown JS -->
+    <script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+    <!-- Cropper -->
+    <script src="vendors/cropperjs/dist/cropper.min.js"></script>
+    <script src="dist/js/cropperjs-data.js"></script>
+
+    <!-- FeatherIcons JavaScript -->
+    <script src="dist/js/feather.min.js"></script>
+
+    <!-- Toggles JavaScript -->
+    <script src="vendors/jquery-toggles/toggles.min.js"></script>
+    <script src="dist/js/toggle-data.js"></script>
+
+    <!-- Init JavaScript -->
+    <script src="dist/js/init.js"></script>
+
+</body>
+
+</html>
