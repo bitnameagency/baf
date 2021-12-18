@@ -1,5 +1,5 @@
 # baf
-/**
+
  * bitnameagency.php
  *
  * Bitname Agency Framework
@@ -14,5 +14,5 @@
  * DİKKAT: Mevcut sunucu & domain dışında kullanılması, kopyalanması kesinlikle yasaktır.
  * DİKKAT: Tesbiti halinde yasal mercilere bildirim sağlanacaktır.
  * DİKKAT: Bitname Agency lisansı iptal etme hakkını saklı tutar.
- */
+
  
